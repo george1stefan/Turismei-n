@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primul meu site</title>
+    <link rel="stylesheet" href="style.css">
+    <script scr="script.js" defer></script>
+
+    <!--Stiluri in HEAD-->
+    <!--
+    <style>
+        p{
+            background:purple;
+            color:aquamarine;
+            border:3px solid greenyellow
+        }
+    </style>
+-->
+</head>
+<body>
+    <!--Aplicarea stilului in linie-->
+<h1 id="titlu-principal" style="background:black; color:greenyellow">Titlu principal</h1>
+<h2 id="subtitlu">Subtitlu</h2>
+<p class="Descriere">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quos consequatur, dignissimos, aliquid natus modi ipsam consectetur fuga est atque deserunt repellat ab commodi suscipit nostrum exercitationem adipisci obcaecati dolorum?</p>
+<!--Ingrosat-->
+<p>
+    Este text <strong>important</strong>
+</p>
+<!--Italic-->
+<p class="Descriere">
+    Acest alt text este tot <em>important</em>
+</p>
+<!--Link-->
+<a href="https://www.atigra.es" target="_blank">Link catre Atigra Makers</a>
+<a href="#familia-skywalker">Familia Skywalker</a>
+<a href="#maestrii">Familia Skywalker</a>
+<!--Imagini-->
+<!--Imagine externa-->
+<img src="https://images.pexels.com/photos/37054685/pexels-photo-37054685.jpeg" alt="Imagine cu lacul rosu" width="75%">
+<!--Imagine locala-->
+<img src="imagine/pexels-elizabeth-zernetska-86424040-37054685.jpg" alt="Imagine cu cu acelasi lac rosu dar inca odata" width="75%">
+<!--Liste-->
+    <!--Ordonate-->
+    <h4 id="familia-skywalker">Lista ordonata</h4>
+<ol>
+    <li>Darth Vader
+    </li>
+    <li>Anakin Skywalker
+    </li>
+    <li>Leila
+    </li>
+</ol>
+    <!-- Neordonate-->
+<h4 id="maestrii">Lista neordonata</h4>
+<ul>
+    <li>Darth Vader
+    </li>
+    <li>Anakin Skywalker
+    </li>
+    <li>Leila
+    </li>
+</ul>
+<!--Atribute globale-->
+<!--Atribut ID (id)
+Sintaxix: <open_label
+id="nume_id_unic">
+
+Descriere:un nume identic elementului din html
+
+Atribut class
+Sintaxix: <open_label
+class="numele_clasei"
+
+Descriere: identifica un grup de elemente
+-->
+
+<!-- Structura continutului-->
+ <!-- Container-->
+  <!--
+ Eticheta <div> pt a grupa diferite elemente
+  -->
+    <h4>eticheta div pentru structura</h4>
+    <div class="articol">
+        <div class="figura">
+            <img
+            src="imagine/pexels-elizabeth-zernetska-86424040-37054685.jpg"
+            alt="Descriere pentru imagine"
+            width="200px"
+            />
+        </div>
+        <h4>Titlul postarii</h4>
+        <p>Paragraful articolului.</p>
+    </div>
+<!--Span-se foloseste pentru a grupa text content in alte elemente-->
+<p>
+    Este un <span class="text_evidentiat">text evidentiat</span>
+</p>
+<!-- HTML Semantic-->
+
+<header>
+    <figure id="logo">
+        <img src="" alt="Logo" />
+    </figure>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>Blog</li>
+            <li>About us</li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section id="hero">
+        <figure id="hero-background">
+            <img src="" alt="Background hero">
+        </figure>
+
+        <div id="hero-text">
+            <h1> Titlul paginii</h1>
+        </div>
+    </section>
+
+    <section id="blog">
+        <article>
+            <figure>
+                <img src="" alt="Imaginea articolului">
+            </figure>
+            <h3>Titlul postarii</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium beatae, nostrum quae ullam sed ipsum iure suscipit! Accusantium, sed eligendi. Eligendi modi expedita vero commodi totam? Facilis eveniet deleniti tempora.
+            </p>
+        </article>
+
+                <article>
+            <figure>
+                <img src="" alt="Imaginea articolului">
+            </figure>
+            <h3>Titlul postarii</h3>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium beatae, nostrum quae ullam sed ipsum iure suscipit! Accusantium, sed eligendi. Eligendi modi expedita vero commodi totam? Facilis eveniet deleniti tempora.
+            </p>
+        </article>
+    </section>
+</main>
+<footer>
+    <div id="left">
+        <h4>Abonare</h4>
+        <input type="email" placeholder="Scrie un email">
+    </div>
+    <div id="right">
+        <h4>Platformele noastre</h4>
+        <ul>
+            <li>Github</li>
+            <li>Instagram</li>
+            <li>YouTube</li>
+        </ul>
+    </div>
+</footer>
+<!--Form-->
+<!-- Save information of the user-->
+ <h3>Formular</h3>
+ <form action="script.js" method="post">
+    <label for="name">Nume:</label>
+    <input type="text" id="name" name="name" placeholder="Scrie numele"/><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" placeholder="Scrie email"><br>
+    
+    <label for="password">Parola:</label>
+    <input type="password" id="password" name="password"><br>
+
+    <button type="submit">Trimite</button>
+    <button type="reset">Sterge</button>
+ </form>
+
+ <!--CSS-->
+
+</body>
+</html>
